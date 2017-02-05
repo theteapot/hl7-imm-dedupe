@@ -7,7 +7,7 @@ class patient:
         self.immunization_his = imm_his
 
 class person:
-    def __init__(dob, gender, lang, birth_ord, birth_st, mom_maiden_name, birth_cntry, death_dt, ethn, mult_birth, occptn, race, addr_obj, prsn_name_obj, prsn_ident_obj, school_obj, resp_prsn_obj):
+    def __init__(self, dob, gender, lang, birth_ord, birth_st, mom_maiden_name, birth_cntry, death_dt, ethn, mult_birth, occptn, race, addr_obj, prsn_name_obj, prsn_ident_obj, school_obj, rsp_prsn_obj):
         self.date_of_birth = dob
         self.gender = gender
         self.primary_language = lang
