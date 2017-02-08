@@ -29,12 +29,24 @@ class person:
         self.responsible_person = rsp_prsn_obj
 
 class address:
+    """Specifies a persons address in HL7
+        address-type -- string: home/work etc.
+        street -- string: street name (in full) and number (e.g. '25 Bay Road')
+        city -- string: the closest city
+        state -- string: the state/territory/region of residence
+        country -- string: the country of residence
+    """
+    
     def __init__(self, addr_type, street, city, state, country):
         self.address_type = addr_type
         self.street = street
         self.city = city
         self.state = state
         self.country = country
+    
+    def __repr__(self):
+        print_string = "Address Type: {0}\nStreet: {1}\nCity: {2}\nState: {3}\nCountry: {4}".format(self.address_type, self.street, self.city, self.state, self.country)
+        return print_string
 
 class person_identifier:
     def __init__(self, ass_auth, id_type, ident):

@@ -1,0 +1,27 @@
+{
+	"address_type": 
+		[
+			"Home", 
+			"Work",
+			"N/P"
+		],
+	"country": 
+		{
+			"Australia": 
+				{
+					"New South Wales": ["Melbourne", "Canberra"],
+					"Northern Terratories": ["Kalgoolie"]
+				},
+			"New Zealand": 
+				{
+					"Northland": ["Whangarei", "Keri-Keri"],
+					"Cantebury": ["Christchurch", "Queenstown"]
+				}
+		},
+	"street": 
+		[
+			"Bay street",
+			"Wainui road",
+			"Rhodadendron way"
+		]
+}

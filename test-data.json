@@ -1,0 +1,20 @@
+{
+	"countries": 
+		[
+			"Australia",
+			"New Zealand"
+		],
+	"cities":
+		[
+			"Auckland",
+			"Wellington",
+			"Canberra",
+			"Sydney"
+		],
+	"streets": 
+		[
+			"Bay street",
+			"Wainui road",
+			"Rhodadendron way"
+		]
+}

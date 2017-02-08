@@ -2,13 +2,6 @@ import patient_class_def as pcd
 import json
 import random
 
-resp_pers = pcd.responsible_person("Dad", "John Hope")
-school = pcd.school("2008-04-17", "2009-11-17", "9", "Orewa College")
-pers_name = pcd.person_name("Taylor", "Kettle", "David", "Mr", "Fullname")
-pers_ident = pcd.person_identifier("Red Beach Dental", "PC760A8D", "tket350")
-addr = pcd.address("Home", "295c Wainui rd", "Hibiscus Coast", "Auckland", "New Zealand")
-persn = pcd.person("1995-04-17", "Male", "English", "3", "Healthy", "Sawyer", "New Zealand", "N/A", "NZ European", "1", "Student", "NZ European", addr, pers_name, pers_ident, school, resp_pers)
-
 address_obj = json.loads(open("address-data.json", "r").read())
 
 def rand_bfs(dict_obj, result):
@@ -32,10 +25,11 @@ def rand_addr(addr_json):
 			result[key] = rand_bfs(addr_json[key], [])
 		else:
 			result[key] = addr_json[key][random.randrange(len(addr_json[key]))]
+		#Randomise country by removing it sometimes
+		if (random.randrange(3)) == 1:
+			result["country"][0] = "N/P"
 	return pcd.address(result["address_type"], result["street"], result["country"][2], result["country"][1], result["country"][0])
 			
-
-print rand_addr(address_obj)
 			
 
 
