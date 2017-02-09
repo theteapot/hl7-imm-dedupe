@@ -1,0 +1,18 @@
+{
+	"assigning_authority": 
+		[
+			"Westmore Hospital",
+			"Glenwood Public Health Clinic",
+			"Harrison Private Hospital",
+			"Municipal State Healthcare Centre",
+			"N/P"
+		],
+	"id_type": 
+		[
+			"medical record number",
+			"birth registration number",
+			"national health number",
+			"N/P"
+		],
+	"identifier": ["5", "7", "9", "11", "N/P"]
+}

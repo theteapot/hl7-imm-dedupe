@@ -16,8 +16,17 @@ class Address(peewee.Model):
 	class Meta:
 		database = db
 
+class Patient_Identifier(peewee.Model):
+	assigning_authority = peewee.TextField()
+	id_type = peewee.TextField()
+	identifier = peewee.TextField()
+	
+	class Meta:
+		database = db
+	
 try:
 	db.create_table(Address)
+	db.create_table
 except:
 	print('table exists')
 
