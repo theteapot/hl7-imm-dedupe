@@ -48,14 +48,22 @@ class address:
         self.country = country
     
     def __repr__(self):
-        print_string = "Address Type: {0}\nStreet: {1}\nCity: {2}\nState: {3}\nCountry: {4}".format(self.address_type, self.street, self.city, self.state, self.country)
-        return print_string
+        return_string = ""
+        for key in self.__dict__.keys():
+            return_string += key + " : " + self.__dict__[key] + "\n"
+        return return_string
 
 class person_identifier:
     def __init__(self, ass_auth, id_type, ident):
         self.assigning_authority = ass_auth
         self.id_type = id_type
         self.identifier = ident
+    
+    def __repr__(self):
+        return_string = ""
+        for key in self.__dict__.keys():
+            return_string += key + " : " + self.__dict__[key] + "\n"
+        return return_string
 
 class person_name:
     def __init__(self, given_name, last_name, midd_name, name_suff, name_type):
